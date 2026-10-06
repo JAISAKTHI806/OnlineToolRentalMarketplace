@@ -84,3 +84,23 @@ h1,h2,h3,h4,.brand,.tool-name,.suggestion-card h4,.rental-row h3,.inventory-row 
 .tap-ripple{background:radial-gradient(circle,#d4ef7288 0,#d4ef7240 42%,#d4ef7200 74%)}
 button:focus-visible,a:focus-visible,.tool-detail-button:focus-visible,.category-chip:focus-visible{outline-color:#d4ef72}
 @media(max-width:680px){body{font-size:15px}.tool-card .tool-name{font-size:18px}.section-heading h2,.view-heading h2,.how-intro h2,.host-banner h2,.dialog-inner h2{font-size:30px}.hero-subtitle,.section-heading>p,.view-heading>p,.how-intro>p,.host-banner p,.rental-row p,.dialog-copy{font-size:15px}}
+
+/* Keep the reference typography in the hero and search controls; use Times New Roman 12px elsewhere. */
+html body .site-header,html body .site-header *,html body .tool-grid,html body .tool-grid *,html body .suggestion-section,html body .suggestion-section *,html body .how-section,html body .how-section *,html body .host-banner,html body .host-banner *,html body .view-panel,html body .view-panel *,html body .site-footer,html body .site-footer *,html body .rental-dialog,html body .rental-dialog *,html body .toast{font-family:'Times New Roman',Times,serif!important;font-size:12px!important}
+html body .tool-grid .tool-art-svg,html body .tool-grid .tool-emoji,html body .tool-grid .availability-dot,html body .tool-grid .owner-dot,html body .tool-grid .heart-button,html body .tool-grid .tool-detail-button{font-size:12px!important}
+html body .tool-grid .tool-art-svg{width:min(82%,190px)!important;height:132px!important}
+html body .tool-grid .tool-emoji{font-size:58px!important}
+/* Screenshot typography stays intact in these featured areas. */
+html body .hero h1{font-family:'Gabriola',Georgia,serif!important;font-size:clamp(58px,7vw,90px)!important;line-height:.9!important;letter-spacing:-.025em!important;font-weight:700!important}
+html body .hero h1 span{font-family:'Gabriola',Georgia,serif!important;font-size:inherit!important;font-style:italic!important;font-weight:400!important}
+html body .hero .eyebrow,html body .hero .art-caption,html body .hero .tool-hero-card>span,html body .hero .hero-bottom-note,html body .hero .neighbor-proof,html body .hero .hero-subtitle,html body .hero .button{font-family:'Bodoni MT',Bodoni,Georgia,serif!important}
+html body .hero .hero-subtitle{font-size:16px!important}
+html body .search-band>.section-heading,html body .search-band>.section-heading *,html body .search-panel,html body .search-panel *,html body .category-row,html body .category-row *{font-family:'Bodoni MT',Bodoni,Georgia,serif!important}
+html body .search-band>.section-heading h2{font-family:'Gabriola',Georgia,serif!important;font-size:34px!important}
+html body .search-band>.section-heading p{font-size:16px!important}
+html body .search-panel input{font-size:16px!important}
+html body .category-chip{font-size:14px!important}
+@media(max-width:680px){html body .hero h1{font-size:58px!important}html body .tool-grid .tool-art-svg{height:108px!important}}
+
+/* User requested 14px for all Times New Roman areas outside the reference screenshot. */
+html body .site-header,html body .site-header *,html body .tool-grid,html body .tool-grid *,html body .suggestion-section,html body .suggestion-section *,html body .how-section,html body .how-section *,html body .host-banner,html body .host-banner *,html body .view-panel,html body .view-panel *,html body .site-footer,html body .site-footer *,html body .rental-dialog,html body .rental-dialog *,html body .toast{font-family:'Times New Roman',Times,serif!important;font-size:14px!important}
