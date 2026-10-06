@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101815">
+  <meta name="description" content="Borrow better tools from makers and neighbors around you.">
+  <title>Borrowed — good tools, good neighbors</title>
+  <link rel="stylesheet" href="styles.css?v=polished-1">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Better projects start with sharing. <a href="#how-it-works">See how it works <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Borrowed home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 24 15 8l3 6 3-5 5 15h-5l-2-6-3 6H7Z"/><path d="M10 24h15"/></svg></span><span>borrowed<span class="brand-period">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#marketplace" data-view="marketplace">Explore</a>
+      <a class="nav-link" href="#rentals" data-view="rentals">My rentals <span class="nav-count" id="rental-count">0</span></a>
+      <a class="nav-link" href="#admin" data-view="admin">Host desk</a>
+    </nav>
+    <div class="header-actions"><span class="location-pill"><span>⌖</span> Tamil Nadu</span><button class="avatar-button" id="profile-button" aria-label="Open profile">J</button><button class="mobile-menu" id="mobile-menu" aria-label="Open menu">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✳</span> THE NEIGHBORHOOD TOOL LIBRARY</div>
+        <h1>Make more.<br><span>Buy less.</span></h1>
+        <p class="hero-subtitle">The right tool makes all the difference. Find it just around the corner, ready for your next big idea.</p>
+        <div class="hero-cta-row"><a href="#marketplace" class="button button-dark">Find your tool <span>↗</span></a><div class="neighbor-proof"><div class="avatar-stack"><span>MK</span><span>AL</span><span>RS</span><span>+</span></div><span>Loved by <strong>2,400+</strong> local makers</span></div></div>
+        <div class="hero-bottom-note"><span class="note-line"></span><span>Rent nearby. Return happy.</span><span class="note-star">✳</span></div>
+      </div>
+      <div class="hero-art" aria-label="A collection of shared tools">
+        <div class="hero-sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-caption art-caption-top"><span class="caption-icon">✳</span><span>GOOD THINGS<br>ARE SHARED</span></div>
+        <div class="tool-hero-card card-drill"><div class="tool-emoji">🛠️</div><span>THE WEEKEND<br>WARRIOR</span></div>
+        <div class="tool-hero-card card-saw"><div class="tool-emoji">🪚</div><span>MADE FOR<br>MAKING</span></div>
+        <div class="tool-hero-card card-ladder"><div class="tool-emoji">🪜</div><span>REACH A LITTLE<br>HIGHER</span></div>
+        <div class="hero-sticker"><span>RENT<br>LOCAL</span><strong>↗</strong></div>
+        <div class="art-caption art-caption-bottom"><span class="caption-line"></span> Your next project, sorted.</div>
+      </div>
+    </section>
+
+    <section class="search-band" id="marketplace">
+      <div class="section-heading"><div><span class="eyebrow muted-eyebrow">THE GOOD STUFF, CLOSE BY</span><h2>Find your next <span>helper.</span></h2></div><p>From one-day fixes to full-on renovations.<br>There’s a neighbor with just the thing.</p></div>
+      <form class="search-panel" id="search-form">
+        <label class="search-field"><span class="field-icon">⌕</span><span class="field-content"><span class="field-label">What do you need?</span><input id="search-query" type="search" placeholder="Try ‘drill’ or ‘garden’"></span></label>
+        <label class="search-field location-field"><span class="field-icon">⌖</span><span class="field-content"><span class="field-label">City or town</span><input id="search-location" type="text" placeholder="e.g. Coimbatore, Chennai"></span></label>
+        <label class="search-field date-field"><span class="field-icon">▦</span><span class="field-content"><span class="field-label">Pick-up date</span><input id="search-date" type="date"></span></label>
+        <label class="search-field date-field"><span class="field-icon">↔</span><span class="field-content"><span class="field-label">Return date</span><input id="return-date" type="date"></span></label>
+        <button class="search-button" type="submit" aria-label="Search tools">↗</button>
+      </form>
+      <div class="category-row"><span class="category-label">BROWSE BY CATEGORY</span><button class="category-chip selected" data-category="All">All tools <span>✳</span></button><button class="category-chip" data-category="Hand tools">🔨 Hand tools</button><button class="category-chip" data-category="Power tools">⚡ Power tools</button><button class="category-chip" data-category="Garden">♧ Garden</button><button class="category-chip" data-category="Workshop">⚒ Workshop</button><button class="category-chip" data-category="Home & repair">⌂ Home & repair</button><span class="results-copy" id="results-copy"></span></div>
+      <div id="tool-grid" class="tool-grid" aria-live="polite"></div>
+      <section id="suggestion-section" class="suggestion-section hidden"><div class="suggestion-heading"><span class="suggestion-icon">✳</span><div><span class="eyebrow muted-eyebrow">A FEW OTHER IDEAS</span><h3>Not quite a match? Try these.</h3><p>These available tools might help with your project.</p></div></div><div id="suggestion-grid" class="suggestion-grid"></div></section>
+    </section>
+
+    <section class="how-section" id="how-it-works"><div class="how-intro"><span class="eyebrow">THE SIMPLE WAY TO DIY</span><h2>Good projects.<br><span>No garage required.</span></h2><p>Rent what you need. Return when you’re done. Make something wonderful.</p><a class="text-link" href="#marketplace">Explore the neighborhood <span>↗</span></a></div><div class="steps-grid"><article class="step-card"><span class="step-number">01</span><span class="step-icon">⌕</span><h3>Find your tool</h3><p>Search nearby gear by project, category, or date. Your next favorite thing is closer than you think.</p><span class="step-scribble">✳</span></article><article class="step-card"><span class="step-number">02</span><span class="step-icon">♡</span><h3>Book with a neighbor</h3><p>See clear daily prices and availability. Choose your dates and send a simple rental request.</p><span class="step-scribble">↗</span></article><article class="step-card"><span class="step-number">03</span><span class="step-icon">✦</span><h3>Get making</h3><p>Pick it up, make the thing, and bring it back. That’s the whole beautiful idea.</p><span class="step-scribble">⌁</span></article></div></section>
+
+    <section class="host-banner"><div class="host-orb">⚒</div><div><span class="eyebrow">A LITTLE SPACE IN YOUR SHED?</span><h2>Your tools could go places.</h2><p>List the gear you’re not using and help your neighbors get their projects moving.</p></div><button class="button button-light" data-open-admin>Become a host <span>↗</span></button></section>
+
+    <section class="view-panel hidden" id="rentals-view"><div class="view-heading"><div><span class="eyebrow muted-eyebrow">YOUR PROJECTS, IN MOTION</span><h2>My rentals<span class="heading-period">.</span></h2></div><p>All your borrowed gear, in one handy place.</p></div><div id="rentals-list" class="rentals-list"></div></section>
+    <section class="view-panel hidden" id="admin-view"><div class="view-heading"><div><span class="eyebrow muted-eyebrow">YOUR NEIGHBORHOOD TOOL SHED</span><h2>Host desk<span class="heading-period">.</span></h2></div><p>Keep listings fresh and rentals running smoothly.</p></div><div class="admin-stats" id="admin-stats"></div><div class="admin-layout"><form class="admin-form" id="add-tool-form"><h3>Add a tool</h3><p>Share a little project magic with your neighbors.</p><label>Tool name<input name="name" required placeholder="e.g. Claw hammer"></label><div class="form-row"><label>Category<select name="category"><option>Hand tools</option><option>Power tools</option><option>Garden</option><option>Workshop</option><option>Home & repair</option></select></label><label>Daily price (₹)<input name="price" required type="number" min="1" step="10" placeholder="150"></label></div><div class="form-row"><label>City or town<input name="location" required list="tn-cities" placeholder="Coimbatore"></label><datalist id="tn-cities"><option>Coimbatore</option><option>Chennai</option><option>Salem</option><option>Kumbakonam</option><option>Trichy</option><option>Thanjavur</option><option>Erode</option><option>Namakkal</option><option>Madurai</option><option>Theni</option><option>Tiruppur</option><option>Tirunelveli</option><option>Dindigul</option><option>Vellore</option><option>Karur</option></datalist><label>Quantity<input name="quantity" type="number" min="1" value="1"></label></div><label>Short description<textarea name="description" rows="3" placeholder="What makes this tool handy?"></textarea></label><div class="image-upload-block"><span class="upload-title">Tool photo</span><label class="upload-drop" for="tool-image"><span class="upload-symbol">↥</span><span><strong>Choose a tool image</strong><small>JPG, PNG, or WebP · resized for this demo</small></span><input id="tool-image" name="image" type="file" accept="image/*"></label><div id="image-upload-preview" class="image-upload-preview hidden"><img id="image-preview-photo" alt="Preview of your tool photo"><div><strong id="image-preview-name">Image ready</strong><small>Saved with this listing on this browser.</small></div><button id="remove-tool-image" type="button" aria-label="Remove photo">×</button></div></div><button class="button button-dark" type="submit">Add to marketplace <span>↗</span></button></form><div class="admin-rentals"><h3>Rental requests</h3><p>Update a rental as it moves from pickup to return.</p><div id="admin-rentals-list"></div></div></div><div class="admin-inventory"><h3>Tool inventory</h3><div id="admin-inventory-list"></div></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 24 15 8l3 6 3-5 5 15h-5l-2-6-3 6H7Z"/></svg></span><span>borrowed<span class="brand-period">.</span></span></a><span>Made for neighbors, makers & everything in between.</span><span>© 2026 borrowed</span></footer>
+
+  <dialog id="rental-dialog" class="rental-dialog"><button class="dialog-close" id="dialog-close" aria-label="Close">×</button><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js?v=tool-title-20"></script>
+</body>
+</html>
+
