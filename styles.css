@@ -107,5 +107,19 @@ html body .tool-art{position:relative;overflow:hidden}
 html body .tool-art>.tool-art-svg{position:absolute;inset:0;width:100%;height:100%;max-width:100%;max-height:100%;overflow:hidden;transform:none;filter:drop-shadow(3px 4px 3px #26372d24)}
 html body .tool-card:hover .tool-art>.tool-art-svg{transform:translateY(-2px) scale(1.03)}
 
+/* Customer and shopkeeper demo role switcher. */
+.role-dialog{width:min(540px,calc(100vw - 28px))}
+.role-dialog-inner h2{font:700 34px/1.1 Gabriola,Georgia,serif;color:var(--ink);margin:7px 0}
+.role-dialog-inner .dialog-copy{margin-bottom:18px}
+.role-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.role-choice{display:flex;flex-direction:column;align-items:flex-start;gap:7px;min-height:155px;padding:16px;border:1px solid #deded3;border-radius:11px;background:#fffefa;color:#18221c;text-align:left;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.role-choice:hover{transform:translateY(-2px);border-color:#91a98f;box-shadow:0 10px 24px #17251a12}
+.role-choice.selected{border:2px solid #244c38;background:#f0f4e9;box-shadow:0 0 0 3px #244c3814}
+.role-choice-icon{font-size:27px}
+.role-choice strong{font:700 21px Gabriola,Georgia,serif}
+.role-choice small{font:14px/1.45 'Times New Roman',Times,serif;color:#69746b}
+.role-demo-note{margin:17px 0 0;padding:10px 12px;border-radius:7px;background:#f5f2e8;color:#747d72;font:13px/1.45 'Times New Roman',Times,serif}
+@media(max-width:520px){.role-choice-grid{grid-template-columns:1fr}.role-choice{min-height:125px}}
+
 
 
