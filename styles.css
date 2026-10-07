@@ -121,5 +121,21 @@ html body .tool-card:hover .tool-art>.tool-art-svg{transform:translateY(-2px) sc
 .role-demo-note{margin:17px 0 0;padding:10px 12px;border-radius:7px;background:#f5f2e8;color:#747d72;font:13px/1.45 'Times New Roman',Times,serif}
 @media(max-width:520px){.role-choice-grid{grid-template-columns:1fr}.role-choice{min-height:125px}}
 
+/* Typography scale matched to the supplied marketplace screenshots. */
+html body{font-size:16px}
+html body .site-header,html body .site-header *,html body .tool-grid,html body .tool-grid *,html body .suggestion-section,html body .suggestion-section *,html body .how-section,html body .how-section *,html body .host-banner,html body .host-banner *,html body .view-panel,html body .view-panel *,html body .site-footer,html body .site-footer *,html body .rental-dialog,html body .rental-dialog *,html body .toast{font-size:16px!important}
+html body .tool-grid .tool-name{font-size:18px!important;line-height:1.05!important}
+html body .tool-grid .tool-price{font-size:16px!important}
+html body .hero .eyebrow,html body .hero .art-caption,html body .hero .tool-hero-card>span,html body .hero .hero-bottom-note{font-size:14px!important}
+html body .hero .hero-subtitle{font-size:18px!important}
+html body .hero .button{font-size:16px!important}
+html body .hero .neighbor-proof{font-size:14px!important}
+html body .search-band>.section-heading p{font-size:16px!important}
+html body .search-panel,html body .search-panel *,html body .category-row,html body .category-row *{font-size:16px!important}
+html body .search-band>.section-heading h2{font-size:36px!important}
+html body .role-choice strong{font-size:21px!important}
+html body .role-choice small{font-size:14px!important}
+html body .role-demo-note{font-size:13px!important}
+
 
 
